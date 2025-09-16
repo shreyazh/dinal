@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dinal Sharma's Portfolio</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/turn.js"></script>
+  <style>
+    body {
+      background: #000000;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+    }
+
+    #flipbook {
+      width: 90vw;              /* take 90% of screen width */
+      max-width: 900px;         /* but never bigger than 900px */
+      aspect-ratio: 3/2;        /* keeps 900x600 ratio */
+      height: auto;             /* auto height based on width */
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      border-radius: 10px;
+      background: rgb(0, 0, 0);
+    }
+
+    #flipbook .page img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      gap: 6px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="flipbook">
+    <div class="page"><img src="images/book/ZYAIR's portfolfio 1_page-0001.jpg"  alt="Book"></div>
+    <div class="page"><img src="images/book/ZYAIR's portfolfio 1_page-0002.jpg"  alt="Book"></div>
+    <div class="page"><img src="images/book/ZYAIR's portfolfio 1_page-0003.jpg"  alt="Book"></div>
+    <div class="page"><img src="images/book/ZYAIR's portfolfio 1_page-0004.jpg"  alt="Book"></div>
+    <div class="page"><img src="images/book/ZYAIR's portfolfio 1_page-0005.jpg"  alt="Book"></div>
+    <div class="page"><img src="images/book/ZYAIR's portfolfio 1_page-0006.jpg"  alt="Book"></div>
+    <div class="page"><img src="images/book/ZYAIR's portfolfio 1_page-0007.jpg"  alt="Book"></div>
+    <div class="page"><img src="images/book/ZYAIR's portfolfio 1_page-0008.jpg"  alt="Book"></div>
+    <div class="page"><img src="images/book/ZYAIR's portfolfio 1_page-0009.jpg"  alt="Book"></div>
+    <div class="page"><img src="images/book/ZYAIR's portfolfio 1_page-0010.jpg"  alt="Book"></div>
+    <div class="page"><img src="images/book/ZYAIR's portfolfio 1_page-0011.jpg"  alt="Book"></div>
+    <div class="page"><img src="images/book/ZYAIR's portfolfio 1_page-0012.jpg"  alt="Book"></div>
+    <div class="page"><img src="images/book/ZYAIR's portfolfio 1_page-0013.jpg"  alt="Book"></div>
+    <div class="page"><img src="images/book/ZYAIR's portfolfio 1_page-0014.jpg"  alt="Book"></div>
+    <div class="page"><img src="images/book/ZYAIR's portfolfio 1_page-0015.jpg"  alt="Book"></div>
+    <div class="page"><img src="images/book/ZYAIR's portfolfio 1_page-0016.jpg"  alt="Book"></div>
+    <div class="page"><img src="images/book/ZYAIR's portfolfio 1_page-0017.jpg"  alt="Book"></div>
+    <div class="page"><img src="images/book/ZYAIR's portfolfio 1_page-0018.jpg"  alt="Book"></div>
+    <div class="page"><img src="images/book/ZYAIR's portfolfio 1_page-0019.jpg"  alt="Book"></div>
+    <div class="page"><img src="images/book/ZYAIR's portfolfio 1_page-0020.jpg"  alt="Book"></div>
+    <div class="page"><img src="images/book/ZYAIR's portfolfio 1_page-0021.jpg"  alt="Book"></div>
+    <div class="page"><img src="images/book/ZYAIR's portfolfio 1_page-0022.jpg"  alt="Book"></div>
+    <div class="page"><img src="images/book/ZYAIR's portfolfio 1_page-0023.jpg"  alt="Book"></div>
+  </div>
+
+  <script>
+    $("#flipbook").turn({
+      width: 900,
+      height: 600,
+      autoCenter: true,
+      elevation: 50,
+      gradients: true,
+      duration: 1000
+    });
+    $(document).keydown(function(e){
+  if (e.keyCode==37) $("#flipbook").turn("previous"); // left arrow
+  if (e.keyCode==39) $("#flipbook").turn("next");     // right arrow
+});
+  </script>
+</body>
+</html>
