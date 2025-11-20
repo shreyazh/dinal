@@ -1,3 +1,4 @@
+# to change the names the cluttered files(images here) in a linear order
 import os
 
 # Path to your images folder
@@ -20,3 +21,4 @@ with open("book.html", "w", encoding="utf-8") as f:
     f.write(html_output)
 
 print("✅ HTML generated")
+
