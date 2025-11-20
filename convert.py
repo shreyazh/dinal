@@ -1,3 +1,5 @@
+# To convert HEIC files to .jpg format 
+
 import os
 from pillow_heif import register_heif_opener
 from PIL import Image
@@ -25,3 +27,4 @@ for filename in os.listdir(input_folder):
         print(f"Converted: {filename} → {jpg_filename}")
 
 print("✅ Conversion complete! All .HEIC files saved as .jpg")
+
