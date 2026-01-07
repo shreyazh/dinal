@@ -1,3 +1,3 @@
-Created By Shreyash Srivastva
-
-Deployed at: https://www.zyair.vercel.app
+Maintainer: Shreyash Srivastva
+Created for: Dinal Sharma
+Deployed Link: https://www.zyair.vercel.app
