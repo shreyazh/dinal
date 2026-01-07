@@ -1,3 +1,3 @@
 Created By Shreyash Srivastva
 
-Deployed at: zyair.vercel.app
+Deployed at: https://www.zyair.vercel.app
